@@ -1,0 +1,21 @@
+<div>
+<input type="text" [(ngModel)]="searchText" placeholder="Buscar" (input)="">
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Categoria</th>
+            <th>Empresa</th>
+            <th>Nivel felicidad</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngfor="let person of persons">
+            <td>{{ person.name}}</td>
+            <td>{{ person.category}}</td>
+            <td>{{ person.company}}</td>
+            <td>{{ person.levelhappines}}</td>
+        </tr>
+    </tbody>
+</table>
